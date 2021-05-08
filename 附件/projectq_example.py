@@ -13,7 +13,7 @@ qubit1 = eng.allocate_qubit()
 qubit2 = eng.allocate_qubit()
 
 
-RX_C(qubit1, 2) # apply a Hadamard gate
+RX_C(qubit1, 2) 
 with Control(eng, qubit1):  #meta.Control实现控制门
     H | qubit2
 
